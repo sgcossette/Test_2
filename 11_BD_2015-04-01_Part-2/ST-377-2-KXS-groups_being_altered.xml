@@ -1,0 +1,148 @@
+<!-- Metadata tags to support XML file editing -->
+<!--  -->
+<!-- author=Bruce Devlin / Thomas Heritage -->
+<!-- edit_date=7 Aug 2015 -->
+<!-- summary_of_edit=377-2 (KXS) modifies several existing Groups. All existing Groups that are to be modified need to be included in this XML file.-->
+<!--  -->
+<!-- DO NOT EDIT THIS TAG -->
+<!-- master_commit_tag=v000000046 -->
+<!-- DO NOT EDIT THIS TAG -->
+
+<GroupsRegister xmlns="http://www.smpte-ra.org/schemas/395/2014">
+  <Entries>
+    <Entry>
+      <Register>Groups</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/395/2014/13/1/aaf</NamespaceName>
+      <Symbol>PropertyDefinition</Symbol>
+      <UL>urn:smpte:ul:060e2b34.027f0101.0d010101.02020000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Property Definition</Name>
+      <Definition>Property Definition</Definition>
+      <Applications>AAF MXF</Applications>
+      <DefiningDocument>AAF Object Specification, SMPTE ST 377-2</DefiningDocument> <!-- Add KXS to this field -->
+      <IsDeprecated>false</IsDeprecated>
+      <Parent>urn:smpte:ul:060e2b34.027f0101.0d010101.02240000</Parent>
+      <IsConcrete>true</IsConcrete>
+      <KLVSyntax>6 83</KLVSyntax>
+      <Contents>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.01010102.06010107.04000000</UL>
+          <LocalTag>11</LocalTag>
+          <IsUniqueID>false</IsUniqueID>
+          <IsOptional>false</IsOptional>
+        </Record>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.01010102.03010202.01000000</UL>
+          <LocalTag>12</LocalTag>
+          <IsUniqueID>false</IsUniqueID>
+          <IsOptional>false</IsOptional>
+        </Record>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.01010102.06010107.05000000</UL>
+          <LocalTag>13</LocalTag>
+          <IsUniqueID>false</IsUniqueID>
+          <IsOptional>true</IsOptional> <!-- Make this optional because although it's mandatory in AAF it is not used in KXS -->
+        </Record>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.01010102.06010107.06000000</UL>
+          <LocalTag>14</LocalTag>
+          <IsUniqueID>false</IsUniqueID>
+          <IsOptional>true</IsOptional>
+        </Record>
+        <Record>
+          <!-- Add MemberOf -->
+          <UL>urn:smpte:ul:060e2b34.0101010d.06010107.22000000</UL>
+          <LocalTag>43</LocalTag>
+          <IsOptional>true</IsOptional>
+        </Record>
+      </Contents>
+    </Entry>
+    <Entry>
+      <Register>Groups</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/395/2014/13/1/aaf</NamespaceName>
+      <Symbol>Root</Symbol>
+      <UL>urn:smpte:ul:060e2b34.027f0101.0d010101.03000000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Root</Name>
+      <Definition>Root</Definition>
+      <Applications>AAF MXF</Applications>
+      <DefiningDocument>AAF Object Specification, SMPTE ST 377-2</DefiningDocument> <!-- Add KXS to this field -->
+      <IsDeprecated>false</IsDeprecated>
+      <IsConcrete>true</IsConcrete>
+      <KLVSyntax>6 83</KLVSyntax>
+      <Contents>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.01010101.01011502.00000000</UL>
+          <LocalTag>15370</LocalTag>
+          <IsOptional>true</IsOptional> <!-- Although this is mandatory in KXS this Element is not used in AAF and so needs to be Optional -->
+        </Record>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.0101010a.06010107.16000000</UL>
+          <LocalTag>1</LocalTag>
+          <IsOptional>true</IsOptional> <!-- Make this optional because although it's mandatory in AAF it is not used in KXS -->
+        </Record>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.0101010a.06010107.17000000</UL>
+          <LocalTag>2</LocalTag>
+          <IsOptional>false</IsOptional>
+        </Record>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.0101010a.06010107.18000000</UL>
+          <LocalTag>33</LocalTag>
+          <IsOptional>true</IsOptional>
+        </Record>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.0101010a.06010107.19000000</UL>
+          <LocalTag>34</LocalTag>
+          <IsOptional>true</IsOptional>
+        </Record>
+        <Record>
+          <!-- Add RootExtensions -->
+          <UL>urn:smpte:ul:060e2b34.0101010d.06010107.1a000000</UL>
+          <LocalTag>35</LocalTag>
+          <IsOptional>true</IsOptional> <!-- Although this is mandatory in KXS this Element is not used in AAF and so needs to be Optional -->
+        </Record>
+      </Contents>
+    </Entry>
+    <Entry>
+      <Register>Groups</Register>
+      <NamespaceName>http://www.smpte-ra.org/reg/395/2014/13/1/aaf</NamespaceName>
+      <Symbol>MetaDefinition</Symbol>
+      <UL>urn:smpte:ul:060e2b34.027f0101.0d010101.02240000</UL>
+      <Kind>LEAF</Kind>
+      <Name>Meta-Definition</Name>
+      <Definition>Meta-Definition</Definition>
+      <Applications>AAF MXF</Applications>
+      <DefiningDocument>AAF Object Specification, SMPTE ST 377-2</DefiningDocument>
+      <IsDeprecated>false</IsDeprecated>
+      <IsConcrete>false</IsConcrete>
+      <KLVSyntax>6 83</KLVSyntax>
+      <Contents>
+        <!-- Add InstanceID -->
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.01010101.01011502.00000000</UL>
+          <LocalTag>15370</LocalTag>
+          <IsOptional>true</IsOptional> <!-- Although this is mandatory in KXS this Element is not used in AAF and so needs to be Optional -->
+        </Record>      
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.01010102.06010107.13000000</UL>
+          <LocalTag>5</LocalTag>
+          <IsUniqueID>true</IsUniqueID>
+          <IsOptional>false</IsOptional>
+        </Record>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.01010102.03020401.02010000</UL>
+          <LocalTag>6</LocalTag>
+          <IsUniqueID>false</IsUniqueID>
+          <IsOptional>false</IsOptional>
+        </Record>
+        <Record>
+          <UL>urn:smpte:ul:060e2b34.01010102.06010107.14010000</UL>
+          <LocalTag>7</LocalTag>
+          <IsUniqueID>false</IsUniqueID>
+          <IsOptional>true</IsOptional>
+        </Record>
+      </Contents>
+    </Entry>
+  </Entries>
+</GroupsRegister>

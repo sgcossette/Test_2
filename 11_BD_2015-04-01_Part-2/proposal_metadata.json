@@ -1,0 +1,14 @@
+{
+  "proposal_author": "Bruce Devlin", 
+  "date_proposal_first_received": "2015-04-01",
+  "associated_defining_document": "SMPTE ST 377-2",
+  "proposal_content_overview": "New entries and alterations to support KXS",
+  "version_byte_values_for_new_entries": {
+    "Elements": 14, 
+    "Labels": 13, 
+    "Groups": 1, 
+    "Types": 1
+  }, 
+  "notes": "",
+  "proposal_status": "mature"
+}
